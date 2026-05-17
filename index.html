@@ -59,13 +59,13 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">ScanQuick: PDF Scanner & OCR &mdash; Last updated: April 18, 2026</p>
+        <p class="subtitle">ScanQuick: PDF Scanner & OCR &mdash; Last updated: May 17, 2026</p>
 
         <p>MIDAS DIGITAL LAB, MChJ ("we", "us", "our") operates the ScanQuick mobile application. This Privacy Policy explains what information the app accesses, how it is used, and the choices you have.</p>
 
-        <h2>1. Information We Do Not Collect</h2>
-        <p>ScanQuick is designed with privacy at its core. We do <strong>not</strong> collect, transmit, or store any personal data on external servers. All document scanning, OCR text extraction, image processing, and file conversion happen entirely on your device.</p>
-        <p>We do not use analytics services, tracking pixels, advertising SDKs, or any form of behavioral profiling.</p>
+        <h2>1. Our Approach to Your Content</h2>
+        <p>Your document content stays on your device. All document scanning, OCR text extraction, image processing, and file conversion happen locally — we never upload, transmit, or store the contents of your scans on our servers.</p>
+        <p>To operate the app and improve marketing of it, we collect a limited set of non-content data described in Sections 5 and 6 below (subscription events and, with your permission, marketing-attribution identifiers).</p>
 
         <h2>2. Data Stored on Your Device</h2>
         <p>The following data is stored locally on your device using the app's sandboxed storage and is never sent to us:</p>
@@ -99,24 +99,49 @@
         <p>RevenueCat receives an anonymous app user identifier and subscription transaction data from Apple. It does not receive your name, email, or any document content. For details, see <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</p>
         <p>We do not process any payment information directly. All billing is handled by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details.</p>
 
-        <h2>6. Children's Privacy</h2>
-        <p>ScanQuick is not directed at children under 13. We do not knowingly collect any personal information from children.</p>
+        <h2>6. Marketing Attribution and Analytics (AppsFlyer)</h2>
+        <p>To understand how users discover ScanQuick and to measure the effectiveness of marketing campaigns, the app uses AppsFlyer, a mobile measurement and attribution platform. AppsFlyer helps us answer questions like "did this user come from a specific ad campaign?" and "is our app growing organically or through paid channels?".</p>
+        <p>The following information is shared with AppsFlyer:</p>
+        <ul>
+            <li><strong>App install and session events</strong> (when you first open the app and on subsequent launches)</li>
+            <li><strong>Subscription events</strong> (trial start, purchase, renewal — without your payment details)</li>
+            <li><strong>Device information</strong>: device model, OS version, country, language, and a randomly-generated AppsFlyer ID</li>
+            <li><strong>Apple Advertising Identifier (IDFA)</strong> — only if you grant tracking permission when prompted on iOS 14+. If you decline, AppsFlyer uses privacy-preserving attribution via Apple's SKAdNetwork instead</li>
+            <li><strong>An anonymous user identifier</strong> shared with RevenueCat to correlate subscription events with installs</li>
+        </ul>
+        <p>AppsFlyer does <strong>not</strong> receive your name, email, document content, OCR text, or scanned images. You control whether IDFA is shared via the iOS App Tracking Transparency prompt that appears on first launch (and can be changed any time in <em>Settings → Privacy & Security → Tracking</em>).</p>
+        <p>For details on how AppsFlyer handles this data, see <a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank">AppsFlyer's Services Privacy Policy</a>.</p>
+        <p>Apple Search Ads attribution is processed automatically by Apple's <a href="https://developer.apple.com/documentation/adservices" target="_blank">AdServices framework</a> and forwarded to AppsFlyer; it does not require additional consent beyond ATT.</p>
 
-        <h2>7. Data Security</h2>
-        <p>Since your data remains on your device, security depends on your device's own protections (passcode, Face ID, Touch ID). ScanQuick also offers an optional PIN lock feature for additional in-app protection. We recommend keeping your device software up to date.</p>
+        <h2>7. Children's Privacy</h2>
+        <p>ScanQuick is not directed at children under 13. We do not knowingly collect any personal information from children. The app is not configured to collect attribution data from users identified as children.</p>
 
-        <h2>8. Third-Party Services</h2>
+        <h2>8. Data Security</h2>
+        <p>Since your document content remains on your device, security depends on your device's own protections (passcode, Face ID, Touch ID). ScanQuick also offers an optional PIN lock feature for additional in-app protection. We recommend keeping your device software up to date. Data sent to RevenueCat and AppsFlyer is transmitted over HTTPS.</p>
+
+        <h2>9. Third-Party Services</h2>
         <p>The app integrates the following third-party services:</p>
         <ul>
-            <li><strong>RevenueCat</strong> — subscription status management (anonymous identifier only)</li>
+            <li><strong>RevenueCat</strong> — subscription status management (anonymous identifier and Apple transaction data only)</li>
+            <li><strong>AppsFlyer</strong> — marketing attribution and analytics (device identifiers, install/session/subscription events; IDFA only with your ATT consent)</li>
+            <li><strong>Apple AdServices / Apple Search Ads</strong> — campaign attribution if you arrive from an Apple Search Ads campaign</li>
+            <li><strong>Apple SKAdNetwork</strong> — privacy-preserving install attribution built into iOS</li>
             <li><strong>Google Sign-In</strong> — authentication for optional Google Drive sync (only when you enable sync)</li>
         </ul>
-        <p>No other third-party services, analytics, or advertising frameworks are used.</p>
+        <p>No advertising SDKs, no in-app ads, and no third-party tracking pixels for advertising purposes are embedded in the app beyond the attribution services listed above.</p>
 
-        <h2>9. Changes to This Policy</h2>
+        <h2>10. Your Rights and Choices</h2>
+        <p>You have the following controls:</p>
+        <ul>
+            <li><strong>App Tracking Transparency (iOS 14+):</strong> decline the ATT prompt or revoke permission in <em>Settings → Privacy & Security → Tracking → ScanQuick</em>. AppsFlyer will not receive your IDFA when permission is denied.</li>
+            <li><strong>Cloud sync:</strong> disable Google Drive sync in app settings to stop transmission of your documents to Google Drive.</li>
+            <li><strong>Data deletion:</strong> uninstall the app to remove all locally-stored data. To request deletion of attribution data already collected, contact us at the email below.</li>
+        </ul>
+
+        <h2>11. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>12. Contact Us</h2>
         <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
         <p><a href="mailto:apps@midasdigitallab.com">apps@midasdigitallab.com</a></p>
 
